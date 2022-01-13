@@ -38,7 +38,7 @@ public class MovieTest {
         Movie endgamePart2 = new Movie("End game part 2", new Date(1591740000), 3);
 
         assertEquals(endgamePart1.hashCode(), endgamePart1.hashCode());
-        assertNotSame(endgamePart1.hashCode(), endgamePart1Copy.hashCode());
+        assertEquals(endgamePart1.hashCode(), endgamePart1Copy.hashCode());
         assertNotSame(endgamePart2.hashCode(), endgamePart1Copy.hashCode());
 
         endgamePart1Copy.setReleaseDate(new Date(159174002));

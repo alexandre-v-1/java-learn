@@ -2,6 +2,7 @@ package equals;
 
 import java.util.Comparator;
 import java.util.Date;
+import java.util.Objects;
 
 public class Movie implements Comparable<Movie> {
     private String title;
@@ -87,14 +88,7 @@ public class Movie implements Comparable<Movie> {
 
     @Override
     public int hashCode() {
-        int res = 1;
-        int cote = 42;
-
-        res = res * cote + (title != null ? title.hashCode() : 0 );
-        res = res * cote + (releaseDate != null ? releaseDate.hashCode() : 0 );
-        res = res * cote + (ranking != null ? ranking.hashCode() : 0 );
-
-        return res;
+       return Objects.hash(title, releaseDate, ranking);
     }
 
     @Override

@@ -1,5 +1,6 @@
-package equals;
+package tests;
 
+import equals.Movie;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

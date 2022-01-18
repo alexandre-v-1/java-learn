@@ -1,5 +1,6 @@
-package array;
+package tests;
 
+import array.Tableau;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

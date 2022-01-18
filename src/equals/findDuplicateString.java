@@ -1,16 +1,14 @@
-import org.testng.annotations.Test;
+package equals;
 
-import java.util.Arrays;
 import java.util.Objects;
 
-import static org.testng.Assert.assertTrue;
-
-public class findDuplicateString {
+public class
+findDuplicateString {
 
     String[] values;
 
-    public void init(String[] data) {
-        values = data;
+    public findDuplicateString(String[] data) {
+        this.values = data;
     }
 
     private String[] duplicatedCharacters() {
@@ -36,14 +34,5 @@ public class findDuplicateString {
         }
 
         return false;
-    }
-
-    @Test
-    public void testArrayValueWith2() {
-        String[] data = new String[]{"A", "B", "A"};
-       findDuplicateString fds = new findDuplicateString();
-       fds.init(data);
-        System.out.print(Arrays.toString(fds.duplicatedCharacters()));
-       assertTrue(true);
     }
 }

@@ -3,12 +3,10 @@ package array;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class Tableau {
-    ArrayList<Integer> values;
+    public ArrayList<Integer> values;
 
-    Tableau (int size) {
+    public Tableau(int size) {
         this.values = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
             this.values.add(i);

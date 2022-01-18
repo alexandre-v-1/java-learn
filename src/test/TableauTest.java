@@ -1,4 +1,4 @@
-package tests;
+package test;
 
 import array.Tableau;
 import org.junit.jupiter.api.DisplayName;

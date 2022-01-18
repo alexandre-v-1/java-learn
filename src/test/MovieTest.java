@@ -1,4 +1,4 @@
-package tests;
+package test;
 
 import equals.Movie;
 import org.junit.jupiter.api.Test;

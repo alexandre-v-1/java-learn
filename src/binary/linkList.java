@@ -1,10 +1,6 @@
 package binary;
 
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
-
-public class LinkList {
+public class linkList {
     cell root;
 
     class cell {
@@ -87,47 +83,5 @@ public class LinkList {
         }
 
         return linkListContainsValueRecursive(element.next, value);
-    }
-
-
-    private LinkList createLinkList() {
-        LinkList ll = new LinkList();
-        ll.addLink(1);
-        ll.addLink(2);
-        ll.addLink(3);
-        ll.addLink(4);
-        ll.addLink(5);
-        ll.addLink(6);
-
-        return ll;
-    }
-
-    @Test
-    public void testContainsValueInLinkList() {
-        LinkList ll = createLinkList();
-
-        assertTrue(ll.linkListContains(1));
-        assertTrue(ll.linkListContains(2));
-        assertTrue(ll.linkListContains(3));
-        assertTrue(ll.linkListContains(4));
-        assertTrue(ll.linkListContains(5));
-        assertTrue(ll.linkListContains(6));
-        assertFalse(ll.linkListContains(8));
-    }
-
-    @Test
-    public void testMiddleOfLinkList() {
-        LinkList ll = createLinkList();
-        assertEquals(ll.findMiddleOfLinkList(), 3);
-    }
-
-    @Test
-    public void testRemoveLinkInList() {
-        LinkList ll = createLinkList();
-        ll.deleteLink(1);
-        assertFalse(ll.linkListContains(1));
-
-        printLinkList(ll.root);
-        assertTrue(true);
     }
 }

@@ -1,9 +1,5 @@
 package binary;
 
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
-
 public class BinaryTree {
     Node root;
 
@@ -23,7 +19,7 @@ public class BinaryTree {
         root = addNodeRecursive(root, value);
     }
 
-    private BinaryTree createBinaryTree() {
+    public BinaryTree createBinaryTree() {
         BinaryTree bt = new BinaryTree();
         bt.addNode(6);
         bt.addNode(4);
@@ -76,24 +72,5 @@ public class BinaryTree {
         }
 
         return value < current.value ? containsNodeRecursive(current.left, value) : containsNodeRecursive(current.right, value);
-    }
-
-    @Test
-    public void testBinaryTreeContainsAddingValue() {
-        BinaryTree bt = createBinaryTree();
-        // root value
-        assertTrue(bt.containsNode(6));
-        // left value
-        assertTrue(bt.containsNode(3));
-        // right value
-        assertTrue(bt.containsNode(8));
-        // none existing value
-        assertFalse(bt.containsNode(12));
-    }
-
-    @Test
-    public void testBinaryTreeValue() {
-        BinaryTree bt = createBinaryTree();
-        assertTrue(true);
     }
 }

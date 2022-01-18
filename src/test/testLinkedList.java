@@ -1,4 +1,4 @@
-package tests;
+package test;
 
 import binary.linkList;
 import org.testng.annotations.Test;
